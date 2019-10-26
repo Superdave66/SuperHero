@@ -9,6 +9,7 @@ namespace HeroMaker.Models
     {
         [key]
         public int HeroID { get; set; }
+        public object hero { get; internal set; }
         public string HeroName { get; set; }
         public string HeroAlias { get; set; }
         public string MainSuperPower { get; set; }

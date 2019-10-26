@@ -1,0 +1,58 @@
+﻿@model HeroMaker.Models.Hero
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Hero</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HeroName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeroName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeroAlias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeroAlias)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MainSuperPower)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MainSuperPower)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondarySuperPower)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondarySuperPower)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Catchphrase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Catchphrase)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.HeroID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
