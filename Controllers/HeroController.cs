@@ -66,8 +66,8 @@ namespace HeroMaker.Controllers
         {
             try
             {
-                var editedHero = heroToEdit;
-                heroToEdit = context.Heroes.Add(editedHero);
+                var editedHeros = heroToEdit;
+                heroToEdit = context.Heroes.Add(editedHeros);
                 var orginalHero = context.Heroes.Where(h => h.HeroID == id).FirstOrDefault();
                 context.Heroes.Remove(orginalHero);
 
