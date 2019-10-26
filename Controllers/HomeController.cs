@@ -26,7 +26,7 @@ namespace HeroMaker.Controllers
 
             return View();
         }
-        
+     
             
     }
 }
